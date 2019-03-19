@@ -975,176 +975,246 @@
     <table id="245" parent="3" name="urun">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <column id="246" parent="242" name="id">
+    <table id="246" parent="3" name="urun_detay">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <column id="247" parent="242" name="id">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="242" name="ust_id">
+    <column id="248" parent="242" name="ust_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="242" name="kategori_adi">
+    <column id="249" parent="242" name="kategori_adi">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="242" name="slug">
+    <column id="250" parent="242" name="slug">
       <Position>4</Position>
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="242" name="olusturulma_tarihi">
+    <column id="251" parent="242" name="olusturulma_tarihi">
       <Position>5</Position>
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="242" name="guncellenme_tarihi">
+    <column id="252" parent="242" name="guncellenme_tarihi">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="252" parent="242" name="silinme_tarihi">
+    <column id="253" parent="242" name="silinme_tarihi">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="253" parent="242" name="PRIMARY">
+    <key id="254" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="254" parent="243" name="id">
+    <column id="255" parent="243" name="id">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="243" name="kategori_id">
+    <column id="256" parent="243" name="kategori_id">
       <Position>2</Position>
       <DataType>int(10) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="243" name="urun_id">
+    <column id="257" parent="243" name="urun_id">
       <Position>3</Position>
       <DataType>int(10) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="257" parent="243" name="kategori_urun_kategori_id_foreign">
+    <index id="258" parent="243" name="kategori_urun_kategori_id_foreign">
       <ColNames>kategori_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="258" parent="243" name="kategori_urun_urun_id_foreign">
+    <index id="259" parent="243" name="kategori_urun_urun_id_foreign">
       <ColNames>urun_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="259" parent="243" name="PRIMARY">
+    <key id="260" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="260" parent="243" name="kategori_urun_kategori_id_foreign">
+    <foreign-key id="261" parent="243" name="kategori_urun_kategori_id_foreign">
       <ColNames>kategori_id</ColNames>
       <RefSchemaName>laravel_ecommerce</RefSchemaName>
       <RefTableName>kategori</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="261" parent="243" name="kategori_urun_urun_id_foreign">
+    <foreign-key id="262" parent="243" name="kategori_urun_urun_id_foreign">
       <ColNames>urun_id</ColNames>
       <RefSchemaName>laravel_ecommerce</RefSchemaName>
       <RefTableName>urun</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="262" parent="244" name="id">
+    <column id="263" parent="244" name="id">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="244" name="migration">
+    <column id="264" parent="244" name="migration">
       <Position>2</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="244" name="batch">
+    <column id="265" parent="244" name="batch">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="265" parent="244" name="PRIMARY">
+    <key id="266" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="266" parent="245" name="id">
+    <column id="267" parent="245" name="id">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="245" name="slug">
+    <column id="268" parent="245" name="slug">
       <Position>2</Position>
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="245" name="urun_adi">
+    <column id="269" parent="245" name="urun_adi">
       <Position>3</Position>
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="245" name="aciklama">
+    <column id="270" parent="245" name="aciklama">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="245" name="fiyati">
+    <column id="271" parent="245" name="fiyati">
       <Position>5</Position>
       <DataType>decimal(6,3 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="245" name="olusturulma_tarihi">
+    <column id="272" parent="245" name="olusturulma_tarihi">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="245" name="guncellenme_tarihi">
+    <column id="273" parent="245" name="guncellenme_tarihi">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="273" parent="245" name="silinme_tarihi">
+    <column id="274" parent="245" name="silinme_tarihi">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="274" parent="245" name="PRIMARY">
+    <key id="275" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+    <column id="276" parent="246" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="277" parent="246" name="urun_id">
+      <Position>2</Position>
+      <DataType>int(10) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="246" name="goster_slider">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="279" parent="246" name="goster_gunun_firsati">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="280" parent="246" name="goster_one_cikan">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="281" parent="246" name="goster_cok_satan">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="282" parent="246" name="goster_indirimli">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="283" parent="246" name="urun_detay_urun_id_unique">
+      <ColNames>urun_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="284" parent="246" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="285" parent="246" name="urun_detay_urun_id_unique">
+      <ColNames>urun_id</ColNames>
+      <UnderlyingIndexName>urun_detay_urun_id_unique</UnderlyingIndexName>
+    </key>
+    <foreign-key id="286" parent="246" name="urun_detay_urun_id_foreign">
+      <ColNames>urun_id</ColNames>
+      <RefSchemaName>laravel_ecommerce</RefSchemaName>
+      <RefTableName>urun</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
   </database-model>
 </dataSource>
