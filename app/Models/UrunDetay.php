@@ -13,4 +13,8 @@ class UrunDetay extends Model
     {
         return $this->belongsTo('App\Models\UrunDetay');
     }
+
+    public function urun(){
+        return $this->belongsTo('App\Models\Urun');
+    }
 }
