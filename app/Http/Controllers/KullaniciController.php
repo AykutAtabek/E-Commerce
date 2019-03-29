@@ -13,7 +13,7 @@ class KullaniciController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('guest')->except('oturumukapat');
+        $this->middleware('guest')->except('oturumukapat','aktiflestir');
     }
 
     public function giris_form(){
