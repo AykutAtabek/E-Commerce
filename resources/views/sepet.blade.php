@@ -68,7 +68,7 @@
             </form>
                 <a href="#" class="btn btn-success pull-right btn-lg">Ödeme Yap</a>
             @else
-                <p>Sepetinizde ürün yok!</p>
+                <p>Sepetinizde ürün yok</p>
             @endif
             <div>
 
