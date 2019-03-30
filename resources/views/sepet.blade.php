@@ -28,12 +28,19 @@
                         <a href="{{route('urun',$urunCartItem->options->slug)}}">
                             {{$urunCartItem->name}}
                         </a>
+                        <form action="{{route('sepet.kaldir', $urunCartItem->rowId)}}" method="post">
+                            {{csrf_field()}}
+                            {{method_field('DELETE')}}
+                            <input type="submit" class="btn btn-danger btn-xs" value="Sepetten Kaldır">
+                        </form>
                     </td>
                     <td>{{$urunCartItem->price}} ₺</td>
                     <td>
-                        <a href="#" class="btn btn-xs btn-default">-</a>
+                        <a href="#" class="btn btn-xs btn-default urun-adet-azalt" data-id="{{$urunCartItem
+                        ->rowId}}" data-adet="{{$urunCartItem->qty-1}}">-</a>
                         <span style="padding: 10px 20px">{{$urunCartItem->qty}}</span>
-                        <a href="#" class="btn btn-xs btn-default">+</a>
+                        <a href="#" class="btn btn-xs btn-default urun-adet-artir" data-id="{{$urunCartItem
+                        ->rowId}}" data-adet="{{$urunCartItem->qty+1}}">+</a>
                     </td>
                     <td class="text-right">
                         {{$urunCartItem->subtotal}} ₺
@@ -53,7 +60,12 @@
                     <td class="text-right">{{Cart::total()}} ₺</td>
                 </tr>
             </table>
-                <a href="#" class="btn btn-info pull-left">Sepeti Boşalt</a>
+
+            <form action="{{route('sepet.bosalt')}}" method="post">
+                {{csrf_field()}}
+                {{method_field('DELETE')}}
+                <input type="submit" class="btn btn-info pull-left" value="Sepeti Boşalt">
+            </form>
                 <a href="#" class="btn btn-success pull-right btn-lg">Ödeme Yap</a>
             @else
                 <p>Sepetinizde ürün yok!</p>
@@ -63,4 +75,23 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('footer')
+    <script>
+        $(function () {
+            $('.urun-adet-artir, .urun-adet-azalt').on('click', function () {
+                var id = $(this).attr('data-id');
+                var adet = $(this).attr('data-adet');
+                $.ajax({
+                    type: 'PATCH',
+                    url: '{{url('sepet/guncelle')}}/'+id,
+                    data: {adet:adet},
+                    success:function () {
+                        window.location.href='{{route('sepet')}}';
+                    }
+                })
+            })
+        })
+    </script>
 @endsection

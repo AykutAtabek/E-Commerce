@@ -19173,6 +19173,11 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 setTimeout(function () {
   $('.alert').slideUp(500);
 }, 10000);
+$.ajaxSetup({
+  headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  }
+});
 
 /***/ }),
 

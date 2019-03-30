@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="822e1e55-f657-4416-92d0-0e1521f0766e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/47dd7e95-74f2-4419-8bf3-f4305b8c3a6a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/47dd7e95-74f2-4419-8bf3-f4305b8c3a6a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KullaniciController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KullaniciController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SepetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SepetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_13_181915_create_kategori_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_13_181915_create_kategori_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_15_230741_create_urun_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_15_230741_create_urun_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/KategoriTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/KategoriTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sepet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sepet.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/urun.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/urun.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,33 +54,33 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/sepet.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+            <state relative-caret-position="1413">
+              <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
               <folding>
-                <element signature="e#724#745#0#HTML" expanded="true" />
+                <element signature="e#1368#1394#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="29" column="137" selection-start-line="29" selection-start-column="137" selection-end-line="29" selection-end-column="137" />
+            <state relative-caret-position="312">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/urun.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="24" column="115" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="115" />
+            <state relative-caret-position="272">
+              <caret line="16" column="86" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -94,11 +88,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SepetController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+            <state relative-caret-position="903">
+              <caret line="88" column="16" lean-forward="true" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
+                <element signature="e#1199#1414#0#PHP" />
+                <element signature="e#1419#1619#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KullaniciController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#40#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/sepet">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -128,7 +145,6 @@
         <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/partials/head.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/commerce.scss" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AnasayfaController.php" />
         <option value="$PROJECT_DIR$/resources/views/arama.blade.php" />
@@ -157,13 +173,10 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/KullaniciController.php" />
         <option value="$PROJECT_DIR$/app/Models/Sepet.php" />
         <option value="$PROJECT_DIR$/app/Models/SepetUrun.php" />
         <option value="$PROJECT_DIR$/config/cart.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_30_133532_create_sepet_urun_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_30_132848_create_sepet_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_23_134853_create_kullanici_table.php" />
@@ -174,8 +187,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/resources/views/urun.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SepetController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/partials/head.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/sepet.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SepetController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/KullaniciController.php" />
       </list>
     </option>
   </component>
@@ -317,6 +334,12 @@
               <item name="eticaret" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eticaret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -414,7 +437,8 @@
       <workItem from="1553440839454" duration="3780000" />
       <workItem from="1553585411923" duration="981000" />
       <workItem from="1553779570650" duration="12848000" />
-      <workItem from="1553952315382" duration="8881000" />
+      <workItem from="1553952315382" duration="9105000" />
+      <workItem from="1553961480867" duration="7347000" />
     </task>
     <task id="LOCAL-00001" summary="2.2">
       <created>1552056287174</created>
@@ -528,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553891189059</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="6.1">
+      <created>1553961419350</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1553961419350</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121192000" />
+    <option name="totallyTimeSpent" value="128763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,9 +576,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20045386" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20347957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -559,14 +589,14 @@
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32569557" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30605564" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24386252" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.15355521" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.21028744" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
@@ -649,14 +679,10 @@
     <MESSAGE value="5.12" />
     <MESSAGE value="5.13" />
     <MESSAGE value="5.14" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.14" />
+    <MESSAGE value="6.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/kullanici/oturumac.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -726,31 +752,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/mails/kullanici_kayit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KullaniciController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#72#0#PHP" expanded="true" />
-            <element signature="e#389#467#0#PHP" />
-            <element signature="e#472#984#0#PHP" />
-            <element signature="e#989#1066#0#PHP" />
-            <element signature="e#1071#1752#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,21 +864,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/sepet_urun">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/urun">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/sepet">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -884,20 +875,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/kullanici">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -967,36 +944,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urun.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="24" column="115" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="115" />
+        <state relative-caret-position="493">
+          <caret line="29" column="137" selection-start-line="29" selection-start-column="137" selection-end-line="29" selection-end-column="137" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="29" column="137" selection-start-line="29" selection-start-column="137" selection-end-line="29" selection-end-column="137" />
+        <state relative-caret-position="102">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/urun.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="86" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/kullanici">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/sepet">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/sepet_urun">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SepetController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+        <state relative-caret-position="903">
+          <caret line="88" column="16" lean-forward="true" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#1199#1414#0#PHP" />
+            <element signature="e#1419#1619#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KullaniciController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/sepet.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        <state relative-caret-position="1413">
+          <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
           <folding>
-            <element signature="e#724#745#0#HTML" expanded="true" />
+            <element signature="e#1368#1394#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
