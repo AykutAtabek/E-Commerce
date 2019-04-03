@@ -17,9 +17,10 @@ route::group(['prefix'=> 'sepet'], function (){
     Route::patch('/guncelle/{rowid}','SepetController@guncelle')->name('sepet.guncelle');
 });
 
+Route::get('/odeme', 'OdemeController@index')->name('odeme');
+Route::post('/odeme', 'OdemeController@odemeyap')->name('odemeyap');
 
 route::group(['middleware'=> 'auth'], function () {
-    Route::get('/odeme', 'OdemeController@index')->name('odeme');
     Route::get('/siparisler', 'SiparisController@index')->name('siparisler');
     Route::get('/siparisler/{id}', 'SiparisController@detay')->name('siparis');
 });

@@ -3,17 +3,18 @@
 @section('content')
     <div class="container">
         <div class="bg-content">
-            <h2>Sipariş (SP-00123)</h2>
+            <h2>Sipariş (SP-{{$siparis->id}})</h2>
             <table class="table table-bordererd table-hover">
                 <tr>
-                    <th>Ürün</th>
+                    <th colspan="2">Ürün</th>
                     <th>Tutar</th>
                     <th>Adet</th>
                     <th>Ara Toplam</th>
                     <th>Durum</th>
                 </tr>
                 <tr>
-                    <td> <img src="http://lorempixel.com/120/100/food/2"> Ürün adı</td>
+                    <td style="width: 120px">
+                        <img src="http://via.placeholder.com/120x100?text=UrunResmi"> Ürün adı</td>
                     <td>18.99</td>
                     <td>1</td>
                     <td>18.99</td>
