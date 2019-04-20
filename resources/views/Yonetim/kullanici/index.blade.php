@@ -3,10 +3,10 @@
 @section('content')
     <h1 class="page-header"> Kullanıcı Yönetimi</h1>
     <h1 class="sub-header">
-        <div class="btn-group pull-right" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary">Print</button>
-            <button type="button" class="btn btn-primary">Export</button>
+        <div class="btn-group pull-right" >
+            <a href="{{route('yonetim.kullanici.yeni')}}" class="btn btn-primary">Yeni</a>
         </div>
+
         Kullanıcı Listesi
     </h1>
     <div class="table-responsive">

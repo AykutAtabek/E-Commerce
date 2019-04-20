@@ -7,7 +7,7 @@ use App\Models\KullaniciDetay;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
-use Hash;
+use Illuminate\Support\Facades\Hash;
 
 class KullaniciController extends Controller
 {
@@ -71,8 +71,8 @@ class KullaniciController extends Controller
         if(request()->filled('sifre')) {
             $data['sifre'] = Hash::make(request('sifre'));
         }
-        $data['aktif_mi'] = request()->has('aktif_mi') ? 1 : 0;
-        $data['yonetici_mi'] = request()->has('yonetici_mi') ? 1 : 0;
+        $data['aktif_mi'] = request()->has('aktif_mi') && request('aktif_mi')==1 ? 1 : 0;
+        $data['yonetici_mi'] = request()->has('yonetici_mi') && request('yonetici_mi')==1 ? 1 : 0;
 
         if($id>0) {
             $entry = Kullanici::where('id', $id)->firstOrFail();
