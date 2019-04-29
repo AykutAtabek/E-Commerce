@@ -54,3 +54,5 @@ Route::get('/test/mail', function (){
     $kullanici = \App\Models\Kullanici::find(1);
     return new App\Mail\KullaniciKayitMail($kullanici);
 });
+
+Route::get('/market/{slug_marketadi}','MarketController@index')->name('market');

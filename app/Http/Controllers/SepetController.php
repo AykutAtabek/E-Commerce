@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Cart;
 use App\Models\Urun;
 use App\Models\Sepet;
+use App\Models\Market;
 use App\Models\SepetUrun;
 use Validator;
 
@@ -17,7 +18,9 @@ class SepetController extends Controller
 //    }
 
     public function index(){
-        return view('sepet');
+        $marketler = Market::select('market.*')->get();
+
+        return view('sepet',compact('marketler'));
     }
 
     public function ekle()

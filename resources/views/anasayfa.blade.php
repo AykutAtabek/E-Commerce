@@ -2,6 +2,25 @@
 @section('title', 'Anasayfa')
 @section('content')
     @include('layouts.partials.alert')
+    <nav>
+        <div class="menuKapsulu">
+            <div class="col-md-12">
+                <div>
+                    <div class="navbar navbar-default" style="text-align: center ; margin-top: 5px;">
+                        <ul>
+                            <li>
+                                @foreach($marketler as $market)
+                                    <a href="{{ route('market',$market->slug) }}">
+                                        {{$market->market_adi}}
+                                    </a>
+                                @endforeach
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -9,10 +28,10 @@
                     <div class="panel-heading">Kategoriler</div>
                     <div class="list-group categories">
                         @foreach($kategoriler as $kategori)
-                        <a href="{{ route('kategori',$kategori->slug) }}" class="list-group-item">
-                            <i class="fa fa-arrow-circle-o-right"></i>
-                            {{$kategori->kategori_adi}}
-                        </a>
+                            <a href="{{ route('kategori',$kategori->slug) }}" class="list-group-item">
+                                <i class="fa fa-arrow-circle-o-right"></i>
+                                {{$kategori->kategori_adi}}
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -21,7 +40,8 @@
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @for($i=0;$i<count($urunler_slider);$i++)
-                        <li data-target="#carousel-example-generic" data-slide-to="{{$i}}" class="{{$i ==0 ? 'active ' : ''}}"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="{{$i}}"
+                                class="{{$i ==0 ? 'active ' : ''}}"></li>
                         @endfor
                     </ol>
                     <div class="carousel-inner" role="listbox">
@@ -71,6 +91,7 @@
                                         {{$urun->urun_adi}}
                                     </a></p>
                                 <p class="price">{{$urun->fiyati}}₺</p>
+                                <p>Misaş</p>
                             </div>
                         @endforeach
                     </div>

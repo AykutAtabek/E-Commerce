@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Kategori;
+use App\Models\Market;
 class KategoriController extends Controller
 {
     public function  index($slug_kategoriadi)
@@ -30,6 +31,7 @@ class KategoriController extends Controller
                 ->distinct()
                 ->paginate(8);
         }
-        return view('kategori',compact('kategori','alt_kategoriler','urunler'));
+        $marketler = Market::select('market.*')->get();
+        return view('kategori',compact('kategori','alt_kategoriler','urunler','marketler'));
     }
 }
