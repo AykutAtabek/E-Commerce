@@ -4,18 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/app/Http/Controllers/AnasayfaController.php" line="13" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="822e1e55-f657-4416-92d0-0e1521f0766e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/partials/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/47dd7e95-74f2-4419-8bf3-f4305b8c3a6a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/47dd7e95-74f2-4419-8bf3-f4305b8c3a6a.xml" afterDir="false" />
+    <list default="true" id="822e1e55-f657-4416-92d0-0e1521f0766e" name="Default Changelist" comment="Ara commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AnasayfaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AnasayfaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KategoriController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KategoriController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SepetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SepetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/anasayfa.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/anasayfa.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sepet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sepet.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,44 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/anasayfa.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding>
-                <element signature="e#207#249#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/urun.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KategoriController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -135,6 +92,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="874ca7a41eb0f40c6d269bbe660260971b837ef9" />
+      </map>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -401,7 +363,7 @@
       <workItem from="1555175490913" duration="8779000" />
       <workItem from="1555689737551" duration="14064000" />
       <workItem from="1556373462793" duration="17845000" />
-      <workItem from="1556460259837" duration="18343000" />
+      <workItem from="1556460259837" duration="19117000" />
     </task>
     <task id="LOCAL-00001" summary="2.2">
       <created>1552056287174</created>
@@ -585,11 +547,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555779874636</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Ara commit &#10;-Market Controller&#10;-Market listeleme">
+      <created>1556537112692</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1556537112692</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Ara commit">
+      <created>1556537387170</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1556537387170</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202534000" />
+    <option name="totallyTimeSpent" value="203308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -692,7 +668,9 @@
     <MESSAGE value="9 Kullanıcı yönetimi&#10;9.1 Kullanıcıları Listeleme&#10;9.2 Kullanıcı Düzenleme Formunu Oluşturma ve Verileri Kaydetme&#10;9.3 Kullanıcı Düzenleme Form Verilerini Kaydetme veya Güncelleme&#9;&#10;9.4 Kullanıcı ekleme" />
     <MESSAGE value="9 Kullanıcı yönetimi&#10;9.4 Kullanıcı ekleme" />
     <MESSAGE value="9 Kullanıcı yönetimi&#10;9.4 Kullanıcı arama&#10;9.5 Kullanıcı sayfalandırma" />
-    <option name="LAST_COMMIT_MESSAGE" value="9 Kullanıcı yönetimi&#10;9.4 Kullanıcı arama&#10;9.5 Kullanıcı sayfalandırma" />
+    <MESSAGE value="Ara commit &#10;-Market Controller&#10;-Market listeleme" />
+    <MESSAGE value="Ara commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ara commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/seeds/UrunTableSeeder.php">
@@ -958,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/anasayfa.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
@@ -1001,11 +972,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KategoriController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="288">
           <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
         </state>
       </provider>
     </entry>
