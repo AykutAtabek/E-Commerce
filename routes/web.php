@@ -6,7 +6,6 @@ Route::group(['prefix'=>'yonetim','namespace'=>'Yonetim'], function (){
     Route::get('/oturumukapat', 'KullaniciController@oturumukapat')->name('yonetim.oturumukapat');
 
     Route::group(['middleware'=> 'yonetim'], function (){
-
         Route::get('/anasayfa', 'AnasayfaController@index')->name('yonetim.anasayfa');
 
         Route::group(['prefix'=> 'kullanici'], function (){

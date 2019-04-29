@@ -16,6 +16,7 @@ class MarketUrun extends Model
     const UPDATED_AT = 'guncellenme_tarihi';
     const DELETED_AT = 'silinme_tarihi';
 
+
     public function marketler()
     {
         return $this->belongsToMany('App\Models\Market','market_urun');

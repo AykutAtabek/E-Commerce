@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class MarketController extends Controller
 {
-
     public function index($slug_marketadi){
         $kategoriler = Kategori::whereRaw('ust_id is null')->take(8)->get();
            $urunler_slider = Urun::select('urun.*')
