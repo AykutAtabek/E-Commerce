@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="database.sqlite" uuid="df95c6ef-a061-411c-833e-6b8347c6c653">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="laravel_ecommerce@localhost" uuid="47dd7e95-74f2-4419-8bf3-f4305b8c3a6a">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="@localhost" uuid="47d59cb7-b8aa-424f-bad4-30b000e7c2d9">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+    </data-source>
+  </component>
+</project>
