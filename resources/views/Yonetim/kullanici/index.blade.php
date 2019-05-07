@@ -1,9 +1,9 @@
 @extends('yonetim.layouts.master')
-@section('title','Anasayfa')
+@section('title','Kullanıcı Yönetimi')
 @section('content')
-    <h1 class="page-header"> Kullanıcı Yönetimi</h1>
+    <h1 class="page-header">Kullanıcı Yönetimi</h1>
 
-    <h3 class="sub-header"> Kullanıcı Listesi </h3>
+    <h3 class="sub-header">Kullanıcı Listesi</h3>
     <div class="well">
         <div class="btn-group pull-right" >
             <a href="{{route('yonetim.kullanici.yeni')}}" class="btn btn-primary">Yeni</a>
@@ -34,6 +34,11 @@
             </tr>
             </thead>
             <tbody>
+            @if (count($list)==0 )
+                <tr>
+                    <td colspan="7" class="text-center">Kayıt bulunamadı!</td>
+                </tr>
+            @endif
             @foreach($list as $entry)
             <tr>
                 <td>{{$entry->id}}</td>
