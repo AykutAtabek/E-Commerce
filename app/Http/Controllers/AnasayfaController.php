@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Market;
 use App\Models\Urun;
 use Illuminate\Http\Request;
 use App\Models\Kategori;
@@ -40,7 +41,9 @@ class AnasayfaController extends Controller
            ->orderBy('guncellenme_tarihi', 'desc')
            ->take(4)->get();
 
+       $marketler = Market::select('market.*')->get();
+
        return view('anasayfa',compact('kategoriler','urunler_slider','urun_gunun_firsati',
-           'urunler_one_cikan','urunler_cok_satan','urunler_indirimli'));
+           'urunler_one_cikan','urunler_cok_satan','urunler_indirimli','marketler'));
    }
 }
