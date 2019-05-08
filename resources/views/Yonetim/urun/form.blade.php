@@ -59,5 +59,37 @@
                 </div>
             </div>
         </div>
+        <div class="checkbox">
+            <label>
+                <input type="hidden" name="goster_slider" value="0">
+                <input type="checkbox" name="goster_slider" value="1"
+                        {{old('goster_slider',$entry->detay->goster_slider) ?
+                        'checked' : ''}}> Slider'da Göster
+            </label>
+            <label>
+                <input type="hidden" name="goster_gunun_firsati" value="0">
+                <input type="checkbox" name="goster_gunun_firsati" value="1"
+                        {{old('goster_gunun_firsati',$entry->detay->goster_gunun_firsati) ?
+                        'checked' : ''}}> Günün Fırsatında Göster
+            </label>
+            <label>
+                <input type="hidden" name="goster_one_cikan" value="0">
+                <input type="checkbox" name="goster_one_cikan" value="1"
+                        {{old('goster_one_cikan',$entry->detay->goster_one_cikan) ?
+                        'checked' : ''}}> Öne Çıkanlar'da Göster
+            </label>
+            <label>
+                <input type="hidden" name="goster_cok_satan" value="0">
+                <input type="checkbox" name="goster_cok_satan" value="1"
+                        {{old('goster_cok_satan',$entry->detay->goster_cok_satan) ?
+                        'checked' : ''}}> Çok Satanlarda Göster
+            </label>
+            <label>
+                <input type="hidden" name="goster_indirimli" value="0">
+                <input type="checkbox" name="goster_indirimli" value="1"
+                        {{old('goster_indirimli',$entry->detay->goster_indirimli) ?
+                        'checked' : ''}}> İndirimlilerde Göster
+            </label>
+        </div>
     </form>
 @endsection

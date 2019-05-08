@@ -4,12 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/app/Http/Controllers/AnasayfaController.php" line="13" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="822e1e55-f657-4416-92d0-0e1521f0766e" name="Default Changelist" comment="10.6 -Üst kategoriye göre arama">
-      <change afterPath="$PROJECT_DIR$/resources/views/Yonetim/urun/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Yonetim/urun/index.blade.php" afterDir="false" />
+    <list default="true" id="822e1e55-f657-4416-92d0-0e1521f0766e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Yonetim/layouts/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Yonetim/layouts/partials/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Yonetim/UrunController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Yonetim/UrunController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Urun.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Urun.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/UrunDetay.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UrunDetay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Yonetim/urun/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Yonetim/urun/form.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +50,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="laravel_ecommerce: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laravel_ecommerce@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="laravel_ecommerce: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="urun_detay: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -61,57 +71,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Yonetim/KullaniciController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="47" selection-start-line="47" selection-end-line="115" selection-end-column="5" />
-              <folding>
-                <element signature="e#297#1099#0#PHP" />
-                <element signature="e#1105#1327#0#PHP" />
-                <element signature="e#1333#1917#0#PHP" />
-                <element signature="e#1923#2132#0#PHP" />
-                <element signature="e#2138#3275#0#PHP" />
-                <element signature="e#3281#3501#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Yonetim/UrunController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="344">
+              <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
               <folding>
                 <element signature="e#48#68#0#PHP" expanded="true" />
+                <element signature="e#165#749#0#PHP" />
                 <element signature="e#755#964#0#PHP" />
-                <element signature="e#970#2107#0#PHP" />
-                <element signature="e#2113#2333#0#PHP" />
+                <element signature="e#955#2058#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/urun/form.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/urun/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="102">
               <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/layouts/partials/sidebar.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/urun/form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+            <state relative-caret-position="529">
+              <caret line="89" column="64" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -152,11 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/Yonetim/oturumac.blade.php" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/Yonetim.php" />
-        <option value="$PROJECT_DIR$/resources/views/Yonetim/layouts/partials/navbar.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/KullaniciController.php" />
         <option value="$PROJECT_DIR$/app/Models/Kullanici.php" />
         <option value="$PROJECT_DIR$/database/seeds/KullaniciSeeder.php" />
@@ -194,15 +177,20 @@
         <option value="$PROJECT_DIR$/resources/views/Yonetim/kullanici/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/alert.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Yonetim/kategori/form.blade.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/app/Models/Kategori.php" />
         <option value="$PROJECT_DIR$/resources/views/Yonetim/kullanici/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Yonetim/KategoriController.php" />
         <option value="$PROJECT_DIR$/resources/views/Yonetim/kategori/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/Yonetim/layouts/partials/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Yonetim/UrunController.php" />
         <option value="$PROJECT_DIR$/resources/views/Yonetim/urun/index.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_15_230741_create_urun_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/Yonetim/urun/form.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Urun.php" />
+        <option value="$PROJECT_DIR$/resources/sass/admin.scss" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/app/Models/UrunDetay.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Yonetim/UrunController.php" />
       </list>
     </option>
   </component>
@@ -338,7 +326,19 @@
             <path>
               <item name="eticaret" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eticaret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eticaret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eticaret" type="b2602c69:ProjectViewProjectNode" />
@@ -359,24 +359,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="Yonetim" type="462c0819:PsiDirectoryNode" />
-              <item name="kullanici" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eticaret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Yonetim" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eticaret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Yonetim" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
+              <item name="urun" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -469,7 +452,7 @@
       <workItem from="1556460259837" duration="20561000" />
       <workItem from="1556988993307" duration="4385000" />
       <workItem from="1557215619607" duration="2513000" />
-      <workItem from="1557219509249" duration="12821000" />
+      <workItem from="1557219509249" duration="16848000" />
     </task>
     <task id="LOCAL-00001" summary="2.2">
       <created>1552056287174</created>
@@ -716,11 +699,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557265047371</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="11   -Ürün yönetimi &#10;11.1 -Ürün Listeleme">
+      <created>1557329018773</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1557329018773</updated>
+    </task>
+    <task id="LOCAL-00037" summary="11   -Ürün yönetimi &#10;11.1 -Ürün Ekleme ve Düzenleme">
+      <created>1557330055029</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1557330055029</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224471000" />
+    <option name="totallyTimeSpent" value="228498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,7 +732,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21860817" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21860817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -747,8 +744,8 @@
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.29623568" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2487725" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.27986908" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2487725" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -803,8 +800,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="2.3" />
-    <MESSAGE value="2.4" />
     <MESSAGE value="2.5" />
     <MESSAGE value="5.6" />
     <MESSAGE value="5.7" />
@@ -828,29 +823,11 @@
     <MESSAGE value="Api" />
     <MESSAGE value="10   -Kategori Yönetimi&#10;10.1 -Kategori Ekleme&#9;&#10;10.2 -Kategorileri listeleme&#10;10.3 -Kategorileri arama&#10;10.4 -Kategorileri sayfalandırma&#10;10.5 -Üst kategori gösterme&#10;10.6 -Üst kategoriye göre arama&#10;10.7 -Kategori Silme" />
     <MESSAGE value="10.6 -Üst kategoriye göre arama" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.6 -Üst kategoriye göre arama" />
+    <MESSAGE value="11   -Ürün yönetimi &#10;11.1 -Ürün Listeleme" />
+    <MESSAGE value="11   -Ürün yönetimi &#10;11.1 -Ürün Ekleme ve Düzenleme" />
+    <option name="LAST_COMMIT_MESSAGE" value="11   -Ürün yönetimi &#10;11.1 -Ürün Ekleme ve Düzenleme" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -922,9 +899,6 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UrunController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/UrunDetay.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/SepetUrun.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -959,13 +933,6 @@
           <folding>
             <element signature="e#40#62#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/urun_detay">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1064,13 +1031,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/kullanici/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/alert.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1116,23 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/kategori/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Yonetim/KategoriController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="e#48#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -1155,9 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/urun/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/layouts/partials/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1165,23 +1105,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Yonetim/UrunController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Yonetim/KategoriController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="264">
+          <caret line="66" column="43" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="66" selection-end-column="43" />
           <folding>
-            <element signature="e#48#68#0#PHP" expanded="true" />
-            <element signature="e#755#964#0#PHP" />
-            <element signature="e#970#2107#0#PHP" />
-            <element signature="e#2113#2333#0#PHP" />
+            <element signature="e#48#72#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_15_230741_create_urun_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/kullanici/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="67" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/admin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/urun/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="89" column="64" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Urun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/UrunDetay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/urun">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://47dd7e95-74f2-4419-8bf3-f4305b8c3a6a/schema/laravel_ecommerce/table/urun_detay">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/kategori/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Yonetim/urun/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="102">
           <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Yonetim/UrunController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+          <folding>
+            <element signature="e#48#68#0#PHP" expanded="true" />
+            <element signature="e#165#749#0#PHP" />
+            <element signature="e#755#964#0#PHP" />
+            <element signature="e#955#2058#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

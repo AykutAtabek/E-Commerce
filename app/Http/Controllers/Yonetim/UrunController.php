@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Yonetim;
 
 use App\Models\Urun;
+use App\Models\UrunDetay;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -47,14 +48,16 @@ class UrunController extends Controller
             'fiyati'       => 'required',
             'slug'         => (request('original_slug')!=request('slug') ? 'unique:urun,slug': '')
         ]);
-
-
+        $data_detay = request()->only('goster_slider','goster_gunun_firsati',
+            'goster_one_cikan','goster_cok_satan','goster_indirimli');
         if($id>0) {
             $entry = Urun::where('id', $id)->firstOrFail();
             $entry->update($data);
+            $entry->detay()->update($data_detay);
         }
         else {
             $entry = Urun::create($data);
+            $entry->detay()->create($data_detay);
         }
 
         return redirect()
@@ -64,10 +67,12 @@ class UrunController extends Controller
     }
 
     public function sil($id){
-        Kullanici::destroy($id);
+        $urun = Urun::find($id);
+        $urun->kategoriler()->detach();
+        $urun->delete();
 
         return redirect()
-            ->route('yonetim.kullanici')
+            ->route('yonetim.urun')
             ->with('mesaj','Kayıt Silindi')
             ->with('mesaj_tur', 'success');
     }
