@@ -1580,7 +1580,7 @@
     </column>
     <column id="355" parent="252" name="fiyati">
       <Position>5</Position>
-      <DataType>decimal(6,3 digit)|0s</DataType>
+      <DataType>decimal(10,3 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>

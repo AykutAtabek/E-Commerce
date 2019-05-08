@@ -28,43 +28,37 @@ class UrunController extends Controller
 
     public function form($id= 0)
     {
-        $entry = new Kullanici;
+        $entry = new Urun;
         if($id>0){
-            $entry = Kullanici::find($id);
+            $entry = Urun::find($id);
         }
-        return view('yonetim.kullanici.form', compact('entry'));
+        return view('yonetim.urun.form', compact('entry'));
     }
 
     public function kaydet($id= 0)
     {
+        $data = request()->only('urun_adi','slug','aciklama','fiyati');
+        if(!request()->filled('slug')) {
+            $data['slug'] = str_slug(request('urun_adi'));
+            request()->merge(['slug' => $data['slug']]);
+        }
         $this->validate(request(), [
-            'adsoyad' => 'required',
-            'email' => 'required|email',
+            'urun_adi' => 'required',
+            'fiyati'       => 'required',
+            'slug'         => (request('original_slug')!=request('slug') ? 'unique:urun,slug': '')
         ]);
 
-        $data = request()->only('adsoyad','email');
-        if(request()->filled('sifre')) {
-            $data['sifre'] = Hash::make(request('sifre'));
-        }
-        $data['aktif_mi'] = request()->has('aktif_mi') && request('aktif_mi')==1 ? 1 : 0;
-        $data['yonetici_mi'] = request()->has('yonetici_mi') && request('yonetici_mi')==1 ? 1 : 0;
 
         if($id>0) {
-            $entry = Kullanici::where('id', $id)->firstOrFail();
+            $entry = Urun::where('id', $id)->firstOrFail();
             $entry->update($data);
         }
         else {
-            $entry = Kullanici::create($data);
+            $entry = Urun::create($data);
         }
-        KullaniciDetay::updateOrCreate(
-            ['kullanici_id'=> $entry->id],
-            [
-                'adres' => request('adres'),
-                'telefon'=> request('telefon')
-            ]
-        );
+
         return redirect()
-            ->route('yonetim.kullanici.duzenle', $entry->id)
+            ->route('yonetim.urun.duzenle', $entry->id)
             ->with('mesaj', ($id>0 ? 'Güncellendi' : 'Kaydedildi'))
             ->with('mesaj_tur', 'success');
     }
