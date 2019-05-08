@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Yonetim;
 
+use App\Models\Kategori;
 use App\Models\Urun;
 use App\Models\UrunDetay;
 use Illuminate\Http\Request;
@@ -30,10 +31,13 @@ class UrunController extends Controller
     public function form($id= 0)
     {
         $entry = new Urun;
+        $urun_kategoriler = [];
         if($id>0){
             $entry = Urun::find($id);
+            $urun_kategoriler = $entry->kategoriler()->pluck('kategori_id')->all();
         }
-        return view('yonetim.urun.form', compact('entry'));
+        $kategoriler = Kategori::all();
+        return view('yonetim.urun.form', compact('entry','kategoriler','urun_kategoriler'));
     }
 
     public function kaydet($id= 0)
@@ -50,14 +54,20 @@ class UrunController extends Controller
         ]);
         $data_detay = request()->only('goster_slider','goster_gunun_firsati',
             'goster_one_cikan','goster_cok_satan','goster_indirimli');
+
+        $kategoriler = request('kategoriler');
+
         if($id>0) {
             $entry = Urun::where('id', $id)->firstOrFail();
             $entry->update($data);
             $entry->detay()->update($data_detay);
+            $entry->kategoriler()->sync($kategoriler);
         }
         else {
             $entry = Urun::create($data);
             $entry->detay()->create($data_detay);
+
+            $entry->kategoriler()->attach($kategoriler);
         }
 
         return redirect()

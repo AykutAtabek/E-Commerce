@@ -64,7 +64,7 @@
                 <input type="hidden" name="goster_slider" value="0">
                 <input type="checkbox" name="goster_slider" value="1"
                         {{old('goster_slider',$entry->detay->goster_slider) ?
-                        'checked' : ''}}> Slider'da Göster
+                        'checked' : ''}}> Sliderda Göster
             </label>
             <label>
                 <input type="hidden" name="goster_gunun_firsati" value="0">
@@ -76,7 +76,7 @@
                 <input type="hidden" name="goster_one_cikan" value="0">
                 <input type="checkbox" name="goster_one_cikan" value="1"
                         {{old('goster_one_cikan',$entry->detay->goster_one_cikan) ?
-                        'checked' : ''}}> Öne Çıkanlar'da Göster
+                        'checked' : ''}}> Öne Çıkanlarda Göster
             </label>
             <label>
                 <input type="hidden" name="goster_cok_satan" value="0">
@@ -91,5 +91,35 @@
                         'checked' : ''}}> İndirimlilerde Göster
             </label>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="kategoriler">Kategoriler</label>
+                    <select name="kategoriler[]" class="form-control" id="kategoriler" multiple>
+                        @foreach($kategoriler as $kategori)
+                            <option value="{{$kategori->id}}"
+                                {{collect(old('kategoriler',$urun_kategoriler))
+                                ->contains($kategori->id) ? 'selected' : ''}}>
+                                {{$kategori->kategori_adi}}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
+        </div>
     </form>
+@endsection
+@section('head')
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet"/>
+@endsection
+@section('footer')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script>
+        $(function () {
+            $('#kategoriler').select2({
+                placeholder: 'Lütfen Kategori Seçiniz'
+            });
+
+        });
+    </script>
 @endsection
