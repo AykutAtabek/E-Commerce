@@ -4,7 +4,8 @@
     <h1 class="page-header">Ürün Yönetimi</h1>
 
 
-    <form method="post" action="{{route('yonetim.urun.kaydet', @$entry->id)}}">
+    <form method="post" action="{{route('yonetim.urun.kaydet', @$entry->id)}}"
+    enctype="multipart/form-data">
         {{csrf_field()}}
 
         <div class="pull-right">
@@ -106,6 +107,11 @@
                     </select>
                 </div>
             </div>
+        </div>
+        <div  class="form-group">
+            <label for="urun_resmi">Ürün Resmi</label>
+            <input type="file" id="urun_resmi" name="urun_resmi">
+
         </div>
     </form>
 @endsection

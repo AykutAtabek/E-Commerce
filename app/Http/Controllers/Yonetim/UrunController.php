@@ -7,6 +7,7 @@ use App\Models\Urun;
 use App\Models\UrunDetay;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Validation\Validator;
 
 class UrunController extends Controller
 {
@@ -66,8 +67,24 @@ class UrunController extends Controller
         else {
             $entry = Urun::create($data);
             $entry->detay()->create($data_detay);
-
             $entry->kategoriler()->attach($kategoriler);
+        }
+
+        if(request()->hasFile('urun_resmi'))
+        {
+            $this->validate(request(),[
+               'urun_resmi' => 'image|mimes:jpg,png,jpeg,gif|max:2048'
+            ]);
+
+            $urun_resmi = request()->file('urun_resmi');
+            $urun_resmi = request()->urun_resmi;
+
+            $dosyaadi = $entry->id . "-". time(). ".". $urun_resmi->extension();
+
+            if($urun_resmi->isValid())
+            {
+                $urun_resmi->move('uploads/urunler',$dosyaadi);
+            }
         }
 
         return redirect()

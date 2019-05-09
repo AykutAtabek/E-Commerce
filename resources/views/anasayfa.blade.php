@@ -5,18 +5,16 @@
     <nav>
         <div class="menuKapsulu">
             <div class="col-md-12">
-                <div>
-                    <div class="navbar navbar-default" style="text-align: center ; margin-top: 5px;">
-                        <ul>
-                            <li>
-                                @foreach($marketler as $market)
-                                    <a href="{{ route('market',$market->slug) }}">
-                                        {{$market->market_adi}}
-                                    </a>
-                                @endforeach
-                            </li>
-                        </ul>
-                    </div>
+                <div class="navbar navbar-default" style="text-align: center ; margin-top: 5px;">
+                    <ul>
+                        <li>
+                            @foreach($marketler as $market)
+                                <a href="{{ route('market',$market->slug) }}">
+                                    {{$market->market_adi}}
+                                </a>
+                            @endforeach
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
