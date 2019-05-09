@@ -16,30 +16,30 @@ class AnasayfaController extends Controller
        $urunler_slider = Urun::select('urun.*')
            ->join('urun_detay', 'urun_detay.urun_id', 'urun_id')
            ->where('urun_detay.goster_slider', 1)
-           ->orderBy('guncellenme_tarihi', 'desc')
+           ->orderBy('guncellenme_tarihi', 'desc')->distinct()
            ->take(5)->get();
 
        $urun_gunun_firsati = Urun::select('urun.*')
            ->join('urun_detay', 'urun_detay.urun_id', 'urun_id')
            ->where('urun_detay.goster_gunun_firsati', 1)
-           ->orderBy('guncellenme_tarihi', 'desc')
+           ->orderBy('guncellenme_tarihi', 'desc')->distinct()
            ->first();
 
        $urunler_one_cikan = Urun::select('urun.*')
            ->join('urun_detay', 'urun_detay.urun_id', 'urun_id')
            ->where('urun_detay.goster_one_cikan', 1)
-           ->orderBy('guncellenme_tarihi', 'desc')
+           ->orderBy('guncellenme_tarihi', 'desc')->distinct()
            ->take(8)->get();
        $urunler_cok_satan = Urun::select('urun.*')
            ->join('urun_detay', 'urun_detay.urun_id', 'urun_id')
            ->where('urun_detay.goster_cok_satan', 1)
-           ->orderBy('guncellenme_tarihi', 'desc')
+           ->orderBy('guncellenme_tarihi', 'desc')->distinct()
            ->take(8)->get();
 
        $urunler_indirimli = Urun::select('urun.*')
            ->join('urun_detay', 'urun_detay.urun_id', 'urun_id')
            ->where('urun_detay.goster_indirimli', 1)
-           ->orderBy('guncellenme_tarihi', 'desc')
+           ->orderBy('guncellenme_tarihi', 'desc')->distinct()
            ->take(8)->get();
 
        $marketler = Market::select('market.*')->get();
