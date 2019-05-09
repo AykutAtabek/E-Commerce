@@ -1655,21 +1655,26 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="367" parent="253" name="urun_detay_urun_id_unique">
+    <column id="367" parent="253" name="urun_resmi">
+      <Position>8</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="368" parent="253" name="urun_detay_urun_id_unique">
       <ColNames>urun_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="368" parent="253" name="PRIMARY">
+    <key id="369" parent="253" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="369" parent="253" name="urun_detay_urun_id_unique">
+    <key id="370" parent="253" name="urun_detay_urun_id_unique">
       <ColNames>urun_id</ColNames>
       <UnderlyingIndexName>urun_detay_urun_id_unique</UnderlyingIndexName>
     </key>
-    <foreign-key id="370" parent="253" name="urun_detay_urun_id_foreign">
+    <foreign-key id="371" parent="253" name="urun_detay_urun_id_foreign">
       <ColNames>urun_id</ColNames>
       <RefSchemaName>laravel_ecommerce</RefSchemaName>
       <RefTableName>urun</RefTableName>

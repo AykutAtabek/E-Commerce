@@ -84,6 +84,11 @@ class UrunController extends Controller
             if($urun_resmi->isValid())
             {
                 $urun_resmi->move('uploads/urunler',$dosyaadi);
+
+                UrunDetay::updateOrCreate(
+                    ['urun_id'    => $entry->id],
+                    ['urun_resmi' => $dosyaadi]
+                );
             }
         }
 

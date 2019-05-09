@@ -5,7 +5,7 @@
 
 
     <form method="post" action="{{route('yonetim.urun.kaydet', @$entry->id)}}"
-    enctype="multipart/form-data">
+          enctype="multipart/form-data">
         {{csrf_field()}}
 
         <div class="pull-right">
@@ -99,8 +99,8 @@
                     <select name="kategoriler[]" class="form-control" id="kategoriler" multiple>
                         @foreach($kategoriler as $kategori)
                             <option value="{{$kategori->id}}"
-                                {{collect(old('kategoriler',$urun_kategoriler))
-                                ->contains($kategori->id) ? 'selected' : ''}}>
+                                    {{collect(old('kategoriler',$urun_kategoriler))
+                                    ->contains($kategori->id) ? 'selected' : ''}}>
                                 {{$kategori->kategori_adi}}
                             </option>
                         @endforeach
@@ -108,7 +108,11 @@
                 </div>
             </div>
         </div>
-        <div  class="form-group">
+        <div class="form-group">
+            @if($entry->detay->urun_resmi!=null)
+                <img src="/uploads/urunler/{{$entry->detay->urun_resmi}}"
+                style="height: 100px; margin-right: 20px;" class="thumbnail pull-left">
+            @endif
             <label for="urun_resmi">Ürün Resmi</label>
             <input type="file" id="urun_resmi" name="urun_resmi">
 

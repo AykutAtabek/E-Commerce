@@ -28,6 +28,7 @@ class MarketController extends Controller
             ->where('urun_detay.goster_one_cikan', 1)
             ->orderBy('guncellenme_tarihi', 'desc')
             ->take(4)->get();
+
         $urunler_cok_satan = Urun::select('urun.*')
             ->join('urun_detay', 'urun_detay.urun_id', 'urun_id')
             ->where('urun_detay.goster_cok_satan', 1)
