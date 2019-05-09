@@ -123,13 +123,26 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet"/>
 @endsection
 @section('footer')
+    <script src="//cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.11.4/plugins/autogrow/plugin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
     <script>
         $(function () {
             $('#kategoriler').select2({
                 placeholder: 'Lütfen Kategori Seçiniz'
             });
-
+            var options = {
+                uiColor: '#F5F5F5',
+                language: 'tr',
+                extraPlugins: 'autogrow',
+                autoGrow_minHeight:250,
+                autoGrow_maxHeight:600,
+                filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+                filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
+                filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+                filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
+            };
+            CKEDITOR.replace('aciklama',options);
         });
     </script>
 @endsection
