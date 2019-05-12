@@ -49,7 +49,7 @@
                        data-toggle="tooltip" data-placement="top" title="Düzenle">
                         <span class="fa fa-pencil"></span>
                     </a>
-                    <a href="{{route('yonetim.urun.sil', $entry->id)}}" class="btn btn-xs btn-danger"
+                    <a href="{{route('yonetim.siparis.sil', $entry->id)}}" class="btn btn-xs btn-danger"
                        data-toggle="tooltip" data-placement="top" title="Sil" onclick="return confirm('Emin misiniz?')">
                         <span class="fa fa-trash"></span>
                     </a>
