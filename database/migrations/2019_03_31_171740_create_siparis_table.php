@@ -16,7 +16,7 @@ class CreateSiparisTable extends Migration
         Schema::create('siparis', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('sepet_id')->unsigned();
-            $table->decimal('siparis_tutari',10,4);
+            $table->decimal('siparis_tutari',10,2);
             $table->string('durum',30)->nullable();
 
             $table->string('adsoyad',50)->nullable();
@@ -32,6 +32,7 @@ UPDATE CURRENT_TIMESTAMP'));
 
             $table->unique('sepet_id');
             $table->foreign('sepet_id')->references('id')->on('sepet')->onDelete('cascade');
+            $table->foreign('urun_id')->references('id')->on('urun')->onDelete('cascade');
         });
 
     }

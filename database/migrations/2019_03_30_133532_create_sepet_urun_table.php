@@ -18,7 +18,7 @@ class CreateSepetUrunTable extends Migration
             $table->integer('sepet_id')->unsigned();
             $table->integer('urun_id')->unsigned();
             $table->integer('adet');
-            $table->decimal('tutar',5,2);
+            $table->decimal('tutar',10,2);
             $table->string('durum',30);
 
 

@@ -32,14 +32,11 @@ class SiparisController extends Controller
 
     public function form($id= 0)
     {
-        $entry = new Urun;
-        $urun_kategoriler = [];
         if($id>0){
-            $entry = Urun::find($id);
-            $urun_kategoriler = $entry->kategoriler()->pluck('kategori_id')->all();
+            $entry = Siparis::with('sepet.sepet_urunler.urun')->find($id);
         }
-        $kategoriler = Kategori::all();
-        return view('yonetim.urun.form', compact('entry','kategoriler','urun_kategoriler'));
+
+        return view('yonetim.siparis.form', compact('entry'));
     }
 
     public function kaydet($id= 0)

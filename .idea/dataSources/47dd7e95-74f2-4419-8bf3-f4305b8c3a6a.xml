@@ -1410,7 +1410,7 @@
     </column>
     <column id="325" parent="250" name="tutar">
       <Position>5</Position>
-      <DataType>decimal(5,2 digit)|0s</DataType>
+      <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1478,58 +1478,58 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="251" name="siparis_tutari">
+    <column id="337" parent="251" name="durum">
       <Position>3</Position>
-      <DataType>decimal(10,4 digit)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="338" parent="251" name="durum">
-      <Position>4</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="251" name="adsoyad">
-      <Position>5</Position>
+    <column id="338" parent="251" name="adsoyad">
+      <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="251" name="adres">
-      <Position>6</Position>
+    <column id="339" parent="251" name="adres">
+      <Position>5</Position>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="251" name="telefon">
-      <Position>7</Position>
+    <column id="340" parent="251" name="telefon">
+      <Position>6</Position>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="251" name="banka">
-      <Position>8</Position>
+    <column id="341" parent="251" name="banka">
+      <Position>7</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="251" name="taksit_sayisi">
-      <Position>9</Position>
+    <column id="342" parent="251" name="taksit_sayisi">
+      <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="251" name="olusturulma_tarihi">
-      <Position>10</Position>
+    <column id="343" parent="251" name="olusturulma_tarihi">
+      <Position>9</Position>
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="251" name="guncellenme_tarihi">
-      <Position>11</Position>
+    <column id="344" parent="251" name="guncellenme_tarihi">
+      <Position>10</Position>
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="346" parent="251" name="silinme_tarihi">
-      <Position>12</Position>
+    <column id="345" parent="251" name="silinme_tarihi">
+      <Position>11</Position>
       <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="346" parent="251" name="siparis_tutari">
+      <Position>12</Position>
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="347" parent="251" name="siparis_sepet_id_unique">
@@ -1580,26 +1580,26 @@
     </column>
     <column id="355" parent="252" name="fiyati">
       <Position>5</Position>
-      <DataType>decimal(10,3 digit)|0s</DataType>
+      <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="356" parent="252" name="olusturulma_tarihi">
+    <column id="356" parent="252" name="guncellenme_tarihi">
       <Position>6</Position>
-      <DataType>timestamp|0s</DataType>
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="357" parent="252" name="guncellenme_tarihi">
-      <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="358" parent="252" name="silinme_tarihi">
+    <column id="357" parent="252" name="silinme_tarihi">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="358" parent="252" name="olusturulma_tarihi">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="359" parent="252" name="PRIMARY">
